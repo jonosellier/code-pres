@@ -1,0 +1,21 @@
+{
+    "data": {
+        "referenceCode": "function showCode(arg) {\n    const type = typeof(arg);\n    return `This shows code with the argument: ${arg} of type ${type}`;\n}",
+        "lang": "js"
+    },
+    "slides": [{
+            "title": "title 1 here",
+            "content": "raw html content here",
+            "showCodeFrom": 1
+        },
+        {
+            "title": "title 2 here",
+            "content": "raw html content here. <ul><li>Html works</li></ul>",
+            "showCodeFrom": 12
+        },
+        {
+            "title": "title 3 here",
+            "content": "raw html content here. this is slide <b>3<b>"
+        }
+    ]
+}

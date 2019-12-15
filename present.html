@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="codetheme.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.7.0/dist/highlightjs-line-numbers.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadPres()">
+    <div id="presContainer">
+        <div id="pres-content">
+
+        </div>
+        <div id="pres-code">
+
+        </div>
+        <div class="button-bar">
+            <div class="left"><button onclick="move(-1)"><i class="material-icons">navigate_before</i></button><button onclick="move(1)"><i class="material-icons">navigate_next</i></button></div>
+            <div class="right"><button onclick="showHideOptions()"><i class="material-icons">more_vert</i></button><button onclick="toggleFs()" id="fsBtn"><i class="material-icons">fullscreen</i></button></div>
+        </div>
+    </div>
+</body>
+
+</html>
