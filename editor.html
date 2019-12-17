@@ -17,28 +17,31 @@
 <body onload="initEditor()">
     <div class="appContent">
         <div id="section-container">
-            <div class="slide-sec" onclick="gotoEdit()">
-                <h4>${slide.title}</h4>
+            <div class="slide-sec code-btn" onclick="showCode()" s>
+                <h3>Reference Code</h3>
             </div>
-            <div class="slide-sec" onclick="gotoEdit()">
-                <h4>${slide.title}</h4>
+            <div class="slide-sec add-slide-btn" onclick="newSlide()" s>
+                <h3>+</h3>
             </div>
-            <div class="slide-sec" onclick="gotoEdit()">
-                <h4>${slide.title}</h4>
-            </div>
-            <div class="slide-sec" onclick="gotoEdit()">
-                <h4>${slide.title}</h4>
-            </div>
-
         </div>
         <div id="editor-and-title-container">
-            <input type="text" id="titleText" placeholder="Slide Title">
+            <input type="text" id="titleText" placeholder="Slide Title" oninput="saveCur()">
             <div id="editor-container">
                 <div id="editor"></div>
             </div>
             <h3 id="coderef-container">Scroll code to <input type="number" id="coderef"></h3>
+            <div id="code-editor"><textarea class="code-area" onchange="saveCode()"></textarea></div>
         </div>
-        <div id="code-editor"><textarea class="code-area"></textarea></div>
+    </div>
+    <div id="click-away-area" onclick="hideMenu()">
+        <div class="context-menu">
+            <ul class="cm-items">
+                <li onclick="duplicateSlide()">Duplicate</li>
+                <li onclick="delSlide()">Delete</li>
+                <li onclick="swapAbove()">Move Up</li>
+                <li onclick="swapBelow()">Move Down</li>
+            </ul>
+        </div>
     </div>
 </body>
 
